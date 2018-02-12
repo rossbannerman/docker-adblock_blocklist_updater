@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -xe
+
+cd /hosts-blocklists
+
+git fetch --all
+git reset --hard origin/master
