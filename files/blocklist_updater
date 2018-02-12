@@ -2,7 +2,7 @@
 
 set -xe
 
-cd /hosts-blocklists
+cd /etc/adblock/blocklists
 
 git fetch --all
 git reset --hard origin/master

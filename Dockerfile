@@ -2,7 +2,8 @@ FROM rossbannerman/git:latest
 
 LABEL maintainer="Ross Bannerman <ross@bnnr.mn>"
 
-RUN git clone https://github.com/notracking/hosts-blocklists.git
+RUN mkdir -p /etc/adblock/blocklists
+RUN git clone https://github.com/notracking/hosts-blocklists.git /etc/adblock/blocklists
 
 COPY files/blocklist_updater /bin/blocklist_updater
 COPY files/root /var/spool/cron/crontabs/root
