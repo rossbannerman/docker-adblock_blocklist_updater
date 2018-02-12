@@ -7,4 +7,4 @@
 Container that clones [notracking/hosts-blocklists](https://github.com/notracking/hosts-blocklists) and fetches updates daily
 
 ## Usage
-`docker run --name -d adblock_blocklist_updater rossbannerman/adblock_blocklist_updater:latest`
+`docker run -d --name adblock_blocklist_updater rossbannerman/adblock_blocklist_updater:latest`
