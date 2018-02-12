@@ -1,8 +1,16 @@
 #!/bin/sh
 
-set -xe
+set -e
+
+date -u
+echo "Updating adblock blocklists..."
 
 cd /etc/adblock/blocklists
 
 git fetch --all
 git reset --hard origin/master
+
+echo "Done!"
+echo
+
+exit 0
