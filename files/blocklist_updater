@@ -10,6 +10,9 @@ cd /etc/adblock/blocklists
 git fetch --all
 git reset --hard origin/master
 
+curl --unix-socket /var/run/docker.sock -X POST http://docker/containers/adblock-
+dnsmasq/restart
+
 echo "Done!"
 echo
 
