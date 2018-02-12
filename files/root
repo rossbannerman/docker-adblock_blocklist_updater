@@ -1,1 +1,1 @@
-0	0	*	*	*	/bin/blocklist_updater >> /dev/stdout
+*	*	*	*	*	/bin/blocklist_updater >> /dev/stdout
