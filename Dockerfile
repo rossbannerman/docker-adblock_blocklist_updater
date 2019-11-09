@@ -13,3 +13,5 @@ COPY files/root /var/spool/cron/crontabs/root
 RUN chmod +x /bin/blocklist_updater
 
 CMD crond -l 2 -f
+
+ENTRYPOINT [""]
