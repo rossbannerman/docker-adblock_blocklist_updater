@@ -1,4 +1,4 @@
-FROM rossbannerman/git:latest
+FROM alpine/git:latest
 
 LABEL maintainer="Ross Bannerman <ross@bnnr.mn>"
 
